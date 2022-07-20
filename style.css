@@ -122,6 +122,11 @@ body {
 
 }
 
+.blog-1 .white-red {
+    background-color: yellow;
+
+}
+
 .blog-1 .white a {
     color: #161616;
 }
@@ -217,6 +222,8 @@ body {
 
 .footer {
     padding: 60px 30px;
+    /* border: 2px solid red; */
+    height: 210px;
 }
 
 hr {
@@ -236,8 +243,13 @@ hr {
 }
 
 .footer-flex {
-    transform: translate(10%, 200%);
-    margin-left: 100px;
+    /* transform: translate(10%, 200%); */
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* margin-left: 200px; */
 }
 
 .footer-flex a {
@@ -317,9 +329,236 @@ hr {
     border-radius: 50%;
     margin-left: 35px;
     cursor: pointer;
+    color: white;
 
 }
 
 .social-media img:hover {
     background-color: red;
+}
+
+.view {
+    width: 14%;
+    margin-top: 3%;
+    margin-left: 28%;
+}
+
+.view h2 {
+
+    /* width: 50%; */
+
+    text-align: center;
+    /* display: hidden; */
+    margin-top: 10%;
+    margin-left: 0%;
+    /* display: none; */
+    padding: 10px 2px;
+    background-color: mediumturquoise;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* ------------------------
+Media Queries part desktop view
+---------------------------- */
+@media Only screen and (min-width:769px) and (max-width:992px) {
+    .head {
+        background-color: blue;
+    }
+
+    .head .text-part h1 {
+        font-size: 50px;
+        color: #FFFFFF;
+        font-weight: 700;
+        line-height: 60px;
+        margin-bottom: 20px;
+    }
+
+    .head .text-part p {
+        color: yellow;
+    }
+
+    .text-part .btn {
+        background-color: #FF00FF;
+    }
+
+    .top {
+        display: block;
+        gap: 30px;
+        margin-top: 40px;
+    }
+
+    .blog {
+        width: 100%;
+        height: 150px;
+        border-radius: 10px;
+        /* background-color: aqua; */
+        margin-bottom: 35px;
+
+    }
+
+    .blog-1 {
+        display: flex;
+        /* padding: 20px 20px; */
+        justify-content: space-between;
+        /* text-align: center; */
+    }
+
+    .blog-1 a {
+        text-decoration: none;
+    }
+
+    .blog-1 .white {
+        padding: 10px 15px;
+        color: white;
+        margin-top: 25px;
+        text-align: center;
+        border-radius: 5px;
+        width: 200px;
+        background-color: #DD0000;
+
+    }
+
+    .blog-1 .white-red {
+        background-color: yellow;
+
+    }
+
+    .blog-1 .white a {
+        color: #161616;
+    }
+
+    .blog-1 .white-2 {
+        padding: 15px 15px;
+        background-color: white;
+        margin-top: 25px;
+        text-align: center;
+        border-radius: 5px;
+        width: 200px;
+
+    }
+
+    .blog-1 .white-2 a {
+        color: #161616;
+    }
+
+    .blog-1 .red {
+        padding: 15px 15px;
+        background-color: navy;
+        margin-top: 25px;
+        text-align: center;
+        border-radius: 5px;
+        width: 200px;
+    }
+
+    .blog-1 .red a {
+        color: #FFFFFF;
+    }
+
+    .transfers {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+
+        /* border: 1px solid red; */
+    }
+
+    .transfer {
+        border: 1px solid rgba(128, 128, 128, 0.336);
+        border-radius: 10px;
+        margin-bottom: 15px;
+        height: 380px;
+    }
+
+    .footer-section {
+        background-color: #161616;
+        height: 370px;
+        /* width: 100%; */
+        /* margin-bottom: 2px; */
+
+    }
+
+
+
+    hr {
+        width: 90%;
+        margin-left: 40px;
+        margin-top: 30px;
+        color: rgba(128, 128, 128, 0.295);
+        /* height: 1px; */
+    }
+
+    .social-media {
+        /* margin-left: 32%; */
+        /* display: flex; */
+
+
+    }
+
+    .social-media img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-left: 35px;
+        cursor: pointer;
+        color: white;
+
+    }
+
+
+}
+
+
+
+
+
+
+
+/* ------------------------
+Media Queries part Tablet view
+---------------------------- */
+@media only screen and (min-width:481px) and (max-width:768px) {
+    .head {
+        background-color: #00FF00;
+    }
+
+    .head .text-part p {
+        color: black;
+
+    }
+
+    .text-part .btn {
+        background-color: #800080;
+    }
+
+    .top {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+/* ------------------------
+Media Queries part mobile view
+---------------------------- */
+
+@media only screen and (max-width:480px) {
+    .head {
+        background-color: MediumSeaGreen;
+    }
+
+    .head .text-part p {
+        color: black;
+
+    }
+
+    .text-part .btn {
+        background-color: SlateBlue;
+    }
 }
